@@ -22,17 +22,17 @@ public class RecursosDistancia {
     }
 
     @GetMapping("/by-points")
-    public Double byPoints(@RequestParam(name = "from") final Long city1,
-                           @RequestParam(name = "to") final Long city2) {
+    public Double byPoints(@RequestParam(name = "from") final Long cidade1,
+                           @RequestParam(name = "to") final Long cidade2) {
         log.info("byPoints");
-        return service.distanceByPointsInMiles(city1, city2);
+        return service.distanceByPointsInMiles(cidade1, cidade2);
     }
 
     @GetMapping("/by-cube")
-    public Double byCube(@RequestParam(name = "from") final Long city1,
-                         @RequestParam(name = "to") final Long city2) {
+    public Double byCube(@RequestParam(name = "from") final Long cidade1,
+                         @RequestParam(name = "to") final Long cidade2) {
         log.info("byCube");
-        return service.distanceByCubeInMeters(city1, city2);
+        return service.distanceByCubeInMeters(cidade1, cidade2);
     }
 
 

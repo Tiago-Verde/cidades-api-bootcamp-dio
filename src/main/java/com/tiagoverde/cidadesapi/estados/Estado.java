@@ -28,14 +28,9 @@ public class Estado {
 
     private Integer ibge;
 
-    //1st
+
     @Column(name = "pais")
     private Integer countryId;
-
-    // 2nd - @ManyToOne
-   // @ManyToOne
-    //@JoinColumn(name = "pais", referencedColumnName = "id")
-   // private Pais pais;
 
     @Type(type = "jsonb")
     @Basic(fetch = FetchType.LAZY)
@@ -65,10 +60,7 @@ public class Estado {
         return ddd;
     }
 
-    //public Pais getPais() {
-      //  return pais;
-   // }
-
+   
   public Integer getCountryId() {
       return countryId;
   }
