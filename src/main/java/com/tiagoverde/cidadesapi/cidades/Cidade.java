@@ -28,9 +28,9 @@ public class Cidade {
 
         private Integer ibge;
 
-//        // 1st
-//        @Column(name = "lat_lon")
-//        private String geolocation;
+        // 1st
+        @Column(name = "lat_lon")
+        private String geolocation;
 
         // 2nd
         @Type(type = "point")
@@ -40,17 +40,7 @@ public class Cidade {
         public Cidade() {
         }
 
-        public Cidade(final Long id, final String name, final Integer uf, final Integer ibge,
-                    final String geolocation, final Point location) {
-            this.id = id;
-            this.name = name;
-            this.uf = uf;
-            this.ibge = ibge;
-            this.geolocation = geolocation;
-            this.location = location;
-        }
-
-        public Long getId() {
+       public Long getId() {
             return id;
         }
 
