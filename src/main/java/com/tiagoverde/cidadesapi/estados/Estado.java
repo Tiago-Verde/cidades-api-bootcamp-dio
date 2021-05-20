@@ -60,7 +60,7 @@ public class Estado {
         return ddd;
     }
 
-   
+
   public Integer getCountryId() {
       return countryId;
   }
